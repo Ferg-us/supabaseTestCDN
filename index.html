@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@supabase/supabase-js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="enrollment system/css/index.css" />
+    <title>ISU Roxas - Enrollment System</title>
+  </head>
+
+  <body>
+    <div class="title">
+      <img
+        src="images/6ACA4478-D4ED-4F77-A229-2F4B74CEF9DE_1_201_a.jpeg"
+        alt="icon"
+      />
+      <h2>Isabela State University</h2>
+      <h1>Enrollment System</h1>
+    </div>
+    <div class="container" id="container">
+      <div class="form-container sign-up">
+        <form id="signUpButton">
+          <h1>Create Account</h1>
+          <div class="social-icons">
+            <a
+              href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dgoogle%2Bsign%2Bup%26client%3Dsafari%26sca_esv%3D597108281%26sxsrf%3DACQVn08s5aszUuipseV-PrM61eQsrnKyVg%253A1704860055935%26source%3Dhp%26ei%3DlxmeZamIN-XF1e8Pra6vGA%26iflsig%3DANes7DEAAAAAZZ4np7CbcvB-YfCdCY6gFxhGrjWRlotH%26ved%3D0ahUKEwjpr5jQ-tGDAxXlYvUHHS3XCwMQ4dUDCAk%26uact%3D5%26oq%3Dgoogle%2Bsign%2Bup%26gs_lp%3DEgdnd3Mtd2l6Ig5nb29nbGUgc2lnbiB1cDIKECMYgAQYigUYJzIFEAAYgAQyChAAGIAEGBQYhwIyChAAGIAEGBQYhwIyBRAAGIAEMgUQABiABDIFEAAYgAQyBxAAGIAEGAoyBRAAGIAEMgUQABiABEiEGFAAWNQTcAB4AJABAZgB8AWgAbgVqgENMC41LjEuMS4xLjAuMbgBA8gBAPgBAcICEBAuGIAEGIoFGEMYxwEY0QPCAgoQABiABBiKBRhDwgILEC4YgAQYxwEY0QPCAhAQLhiABBgUGIcCGMcBGNED%26sclient%3Dgws-wiz&ec=GAZAAQ&flowEntry=ServiceLogin&flowName=GlifWebSignIn&hl=en&ifkv=ASKXGp2GI4bGFh2Fq0C5zkyR8ywHXqLh4e3MwECUOaPlGN2bl__dFcdYH1692NkzBmB-xk70YRen&passive=true&theme=glif"
+              class="icon"
+              rel="noreferrer noopener"
+              ><i class="fa-brands fa-google-plus-g"></i
+            ></a>
+            <a
+              href="https://www.facebook.com"
+              class="icon"
+              rel="noreferrer noopener"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </div>
+          <span id="signUp">or use your email for registeration</span>
+          <!-- <input id="signName" type="text" placeholder="Name" /> -->
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+      <div class="form-container sign-in">
+        <form id="logInButton">
+          <h1>Sign In</h1>
+          <div class="social-icons">
+            <button id="signInBtn" class="icon">
+              <i class="fa-brands fa-google-plus-g"></i>
+            </button>
+            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+          <span>or use your email password</span>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <a href="#">Forget Your Password?</a>
+          <button type="submit">Sign In</button>
+        </form>
+      </div>
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1>Welcome!</h1>
+            <p>Already have an account?</p>
+            <button class="hidden" id="login">Sign In</button>
+          </div>
+          <div class="toggle-panel toggle-right">
+            <h1>Welcome!</h1>
+            <p>Don't have an account?</p>
+            <button class="hidden" id="register">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="supabase.js" defer type="module"></script>
+    <script src="index.js" defer></script>
+  </body>
+</html>
